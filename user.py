@@ -3,9 +3,9 @@ from database import base
 
 class User(base):
     __tablename__ = "users"
-    __tableargs__ ={"schema":"trainning"}
+    __tableargs__ ={"schema":"training_w85w"}
 
-    id = Column(Integer, primary_key=True,autoincrement= True)
+    id = Column(Integer, primary_key=True)
     name= Column(String(100))
     email = Column(String(100))
     age = Column(Integer)
